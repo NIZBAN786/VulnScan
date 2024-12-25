@@ -12,9 +12,7 @@ import scapy.all as scapy
 
 # scapy.ls(scapy.ARP)
 
-# def packet_callback(packet):
-#     packet.show()
-
-# Sniff packets on the network
-# scapy.sniff(prn=packet_callback, count=10)
+def packet_callback(packet):
+    packet.show()
+    scapy.sniff(prn=packet_callback, count=10)
 
