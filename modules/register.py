@@ -11,10 +11,10 @@ def register():
 
 def login():
     email = input("Enter your email: ")
-    password = input("Enter your password: ")
+    password = input("Enter your password: ")  
     user = db.collection.find_one({"email": email})
-    if user["password"] == password:
-        print("Login successful")
+    if user and user["password"] == password:
+        name = user.get('name')
+        print(f"Welcome {name}!")
     else:
         print("Login failed")
-
