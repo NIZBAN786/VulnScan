@@ -1,10 +1,10 @@
 import modules.welcome as welcome
 import modules.db as db
 import modules.register as register
+import modules.virustotal as virustotal
 
-
+welcome.welcome()
 while True:
-    welcome.welcome()
     print("1. Register")
     print("2. Login")
     print("3. Exit")

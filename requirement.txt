@@ -1,4 +1,7 @@
 pyfiglet
 pymongo
-scapy
-python-nmap
+os
+python-dotenv
+base64
+requests
+coloroma
